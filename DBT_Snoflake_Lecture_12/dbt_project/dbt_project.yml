@@ -1,0 +1,31 @@
+name: 'dbt_project'
+version: '1.0.0'
+
+# Указываем, какой профиль использовать (должен совпадать с именем в profiles.yml)
+profile: 'dbt_project'
+
+# Пути к разным типам файлов dbt
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# Папки, которые очищаются командой dbt clean
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# dbt_project.yml
+models:
+  dbt_project:
+    staging:
+      +schema: RAW_STG
+      +materialized: view
+
+    intermediate:
+      +schema: RAW_STG
+      +materialized: table
+
+
