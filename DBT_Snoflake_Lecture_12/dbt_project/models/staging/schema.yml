@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: RAW
+    database: IZABELKIN_DB
+    schema: RAW
+    description: "Сирі таблиці, завантажені з CSV (Kaggle FIFA 23 тощо)."
+    tables:
+      - name: MALE_PLAYERS
+        description: "Оригінальний CSV з чоловічими гравцями."
+      - name: FEMALE_PLAYERS
+        description: "Оригінальний CSV з жіночими гравцями."
+      - name: MALE_COACHES
+        description: "Оригінальний CSV з тренерами."
+      - name: FIRST_MODEL
+        description: "TPCH demo: таблиця клієнтів."
+
+models:
+  - name: stg_male_coaches
+    description: "Staging для RAW.MALE_COACHES: snake_case, типи, чистка."
+    columns:
+      - name: coach_id
+        description: "Унікальний ID тренера (числовий)."
+      - name: short_name
+        description: "Коротке ім'я тренера."
+      - name: nationality_name
+        description: "Країна."
+  - name: stg_first_model
+    description: "Staging для RAW.FIRST_MODEL (TPCH customers)."
+    columns:
+      - name: cust_key
+        description: "Первинний ключ клієнта."
+      - name: acct_bal
+        description: "Баланс рахунку (DECIMAL)."

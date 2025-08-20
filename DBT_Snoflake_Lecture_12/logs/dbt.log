@@ -1,0 +1,65 @@
+[0m18:08:46.676420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A4C4A890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A3C5AB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A38CFAD0>]}
+
+
+============================== 18:08:46.680962 | 3fcecbd5-32b4-4285-9a5b-3ff3b9eb2a22 ==============================
+[0m18:08:46.680962 [info ] [MainThread]: Running with dbt=1.10.7
+[0m18:08:46.680962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Yoga\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init dbt_snowflake_project', 'send_anonymous_usage_stats': 'True'}
+[0m18:08:46.703530 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Yoga\.dbt
+[0m18:08:46.706716 [debug] [MainThread]: Starter project path: C:\Users\Yoga\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m18:08:46.792770 [info ] [MainThread]: 
+Your new dbt project "dbt_snowflake_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:08:46.794352 [info ] [MainThread]: Setting up your profile.
+[0m18:19:03.963766 [info ] [MainThread]: Profile dbt_snowflake_project written to C:\Users\Yoga\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:19:03.966081 [debug] [MainThread]: Command `dbt init` succeeded at 18:19:03.966081 after 617.37 seconds
+[0m18:19:03.967087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A3C29790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001579CF97610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157A3C17AD0>]}
+[0m18:19:03.967087 [debug] [MainThread]: Flushing usage events
+[0m18:19:05.101584 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:38:53.667506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7D6A08A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7D6D3BB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7D7D729D0>]}
+
+
+============================== 18:38:53.673145 | c8f9e6c8-5ca9-4063-ba03-101a1535dcb7 ==============================
+[0m18:38:53.673145 [info ] [MainThread]: Running with dbt=1.10.7
+[0m18:38:53.674145 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Yoga\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:41.663291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC46368D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC4634950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC42B7AD0>]}
+
+
+============================== 18:41:41.667889 | 3306f1ed-477e-4e41-b087-2dc0dd4938ff ==============================
+[0m18:41:41.667889 [info ] [MainThread]: Running with dbt=1.10.7
+[0m18:41:41.669040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Yoga\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_project', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:41.693788 [debug] [MainThread]: Starter project path: C:\Users\Yoga\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m18:41:41.775535 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:41:41.776435 [info ] [MainThread]: Setting up your profile.
+[0m18:44:37.308111 [info ] [MainThread]: Profile dbt_project written to C:\Users\Yoga\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:44:37.308111 [debug] [MainThread]: Command `dbt init` succeeded at 18:44:37.308111 after 175.73 seconds
+[0m18:44:37.308111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC4615590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC563A7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEC563A710>]}
+[0m18:44:37.311252 [debug] [MainThread]: Flushing usage events
+[0m18:44:37.951815 [debug] [MainThread]: An error was encountered while trying to flush usage events
