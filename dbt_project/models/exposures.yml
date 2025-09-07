@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  - name: league_performance_dashboard
+    type: dashboard
+    maturity: medium
+    url: "https://your-bi-tool/dashboard/league"
+    description: "BI-дашборд по лігах."
+    depends_on:
+      - ref('int_league_insights_male')
+      - ref('int_league_insights_female')
+    owner:
+      name: Your Team
+      email: you@example.com

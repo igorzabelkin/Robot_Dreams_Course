@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: int_players_male
+    description: "Уніфікований набір гравців (male) + gender, стабільні club_id/league_id."
+    columns:
+      - name: player_id
+        description: "Унікальний ідентифікатор гравця на рівні INT."
+      - name: gender
+        description: "Стать джерела ('male')."
+      - name: club_id
+        description: "Стабільний club_id (хеш club_name+league_name)."
+      - name: overall
+        description: "Загальний рейтинг (0–99)."
+
+  - name: int_players_female
+    description: "Уніфікований набір гравців (female) + gender, стабільні club_id/league_id."
+    columns:
+      - name: player_id
+        description: "Унікальний ідентифікатор гравця на рівні INT."
+      - name: gender
+        description: "Стать джерела ('female')."
+
+  - name: int_team_profiles_male
+    description: "Агрегати по клубах (male): кількість гравців, середній рейтинг, сумарна вартість."
+    columns:
+      - name: club_id
+        description: "Ключ клубу."
+      - name: avg_overall
+        description: "Середній рейтинг клубу."
+      - name: total_value_eur
+        description: "Сумарна ринкова вартість."
+
+  - name: int_team_profiles_female
+    description: "Агрегати по клубах (female)."
+
+  - name: int_league_insights_male
+    description: "Агрегати по лігах (male): середні рейтинги, young talents."
+    columns:
+      - name: has_young_talents
+        description: "TRUE, якщо є гравці віком ≤23 та потенціалом >85."
+
+  - name: int_league_insights_female
+    description: "Агрегати по лігах (female): середні рейтинги, young talents."
